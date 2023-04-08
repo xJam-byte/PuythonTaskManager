@@ -59,12 +59,13 @@ newnow = newnow[0].replace('-', '.')
 #    await bot.delete_message(msg.from_user. , msg.chat.id)
 
 button1 = KeyboardButton('/start')
+button5 = KeyboardButton('/help')
 button2 = KeyboardButton('/show_all_tasks')
 button3 = KeyboardButton('/add_task')
 button4 = KeyboardButton('/set_done')
 
 markup3 = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(
-    button1).add(button2).add(button3).add(button4)
+    button1).add(button2).add(button3).add(button4).add(button5)
 
 
 @dp.message_handler(commands=['start', 'help'])
